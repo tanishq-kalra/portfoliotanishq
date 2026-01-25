@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tanishq Kalra | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg-color: #fdfdfd;
+            --card-bg: #ffffff;
+            --text-main: #1a1a1a;
+            --text-dim: #4b5563;
+            --border-light: #e5e7eb;
+            --border-hover: #111827; 
+            --accent: #6366f1;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.7;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 60px;
+        }
+
+        .nav-right {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .social-icons a {
+            font-size: 1.4rem;
+            color: var(--text-main);
+            transition: color 0.3s;
+        }
+        .social-icons a:hover { color: var(--accent); }
+
+        .hero { margin-bottom: 80px; }
+        h1 { font-size: 3.5rem; font-weight: 800; margin-bottom: 10px; letter-spacing: -1px; }
+        .typewriter { font-size: 1.5rem; font-weight: 600; color: var(--accent); }
+
+        section { margin-bottom: 80px; }
+        h2 { font-size: 1.8rem; margin-bottom: 30px; border-bottom: 2px solid var(--border-light); display: inline-block; }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            padding: 32px;
+            border-radius: 16px;
+            border: 1px solid var(--border-light);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .card:hover {
+            border-color: var(--border-hover);
+            transform: translateY(-4px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+        }
+        
+        .full-width { grid-column: span 2; }
+        .card h3 { margin-top: 0; font-size: 1.25rem; }
+        .card p { color: var(--text-dim); font-size: 0.95rem; }
+
+        .tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
+        .tag {
+            background: #f3f4f6;
+            color: var(--text-dim);
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        .link-btn {
+            display: inline-flex;
+            align-items: center;
+            margin-top: 15px;
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+        }
+        .link-btn:hover {
+            background-color: var(--accent);
+            color: white;
+        }
+        .link-btn i { margin-right: 8px; }
+
+        @media (max-width: 768px) {
+            .grid { grid-template-columns: 1fr; }
+            .full-width { grid-column: span 1; }
+            h1 { font-size: 2.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header data-aos="fade-down">
+        <div style="font-weight: 800; font-size: 1.4rem;">TK.</div>
+        <div class="nav-right">
+            <div class="social-icons">
+                <a href="https://linkedin.com/in/tanishq-kalra-907862223" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero" data-aos="fade-up">
+        <h1>Tanishq Kalra</h1>
+        <div class="typewriter-container">
+            <span class="typewriter"></span>
+        </div>
+        <p style="max-width: 650px; margin-top: 20px; color: var(--text-dim);">
+            Computer Science & Engineering student at <strong>VIT-AP</strong> (CGPA: 8.73).
+            Expertly bridging the gap between technical data analysis and creative narrative strategy.
+        </p>
+        
+        <a href="resume.html" target="_blank" class="link-btn" style="border: 2px solid var(--accent); padding: 10px 20px; border-radius: 10px; margin-top: 25px; display: inline-block;">
+            <i class="fas fa-file-pdf"></i> View Full Resume
+        </a>
+    </section>
+
+    <section id="projects">
+        <h2 data-aos="fade-right">Featured Projects</h2>
+        <div class="grid">
+            <div class="card" data-aos="fade-up">
+                <h3><i class="fas fa-chart-pie"></i> Data Analytics Dashboard</h3>
+                <p>Built interactive Excel dashboards using Pivot Tables and Google Analytics. Partnered with stakeholders to identify business metrics, improving decision-making efficiency by 20%.</p>
+                <div class="tags">
+                    <span class="tag">Google Analytics</span> <span class="tag">MS Excel</span> <span class="tag">Pivot Tables</span>
+                </div>
+            </div>
+
+            <div class="card" data-aos="fade-up" data-aos-delay="100">
+                <h3><i class="fas fa-globe"></i> Full Stack Website</h3>
+                <p>Developed a responsive website with HTML, CSS, and Bootstrap. Implemented backend logic using Java (Servlets/JSP) with user authentication and form validation.</p>
+                <div class="tags">
+                    <span class="tag">Java Servlets</span> <span class="tag">JSP</span> <span class="tag">Bootstrap</span> <span class="tag">JavaScript</span>
+                </div>
+            </div>
+
+            <div class="card full-width" data-aos="fade-up">
+                <h3><i class="fas fa-radar"></i> City Shock Radar (Current)</h3>
+                <p>Developing a comprehensive data analytics platform focused on urban metrics and real-time data visualization to track societal impacts and shocks.</p>
+                <div class="tags">
+                    <span class="tag">Data Visualization</span> <span class="tag">Research</span> <span class="tag">Analytics</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2 data-aos="fade-right">Technical Arsenal</h2>
+        <div class="grid">
+            <div class="card full-width" data-aos="fade-up">
+                <h3>Languages & Development</h3>
+                <div class="tags">
+                    <span class="tag">Java</span> <span class="tag">Python</span> <span class="tag">SQL</span> 
+                    <span class="tag">HTML/CSS</span> <span class="tag">JavaScript</span> <span class="tag">Bootstrap</span>
+                    <span class="tag">Servlets/JSP</span> <span class="tag">Full Stack Development</span>
+                    <span class="tag">Data Structures & Algorithms</span> <span class="tag">Software Engineering</span>
+                </div>
+            </div>
+            <div class="card" data-aos="fade-up">
+                <h3>Data & Analytics</h3>
+                <div class="tags">
+                    <span class="tag">Google Analytics</span> <span class="tag">MS Excel (Advanced)</span> 
+                    <span class="tag">Pivot Tables</span> <span class="tag">Database Management</span>
+                </div>
+            </div>
+            <div class="card" data-aos="fade-up" data-aos-delay="100">
+                <h3>Strategy & Tools</h3>
+                <div class="tags">
+                    <span class="tag">SEO</span> <span class="tag">PR Strategy</span> <span class="tag">Git/GitHub</span>
+                    <span class="tag">Postman</span> <span class="tag">Public Outreach</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="writing">
+        <h2 data-aos="fade-right">The Wordsmith</h2>
+        <div class="grid">
+            <a href="https://www.flipkart.com/collection-novice-wordsmith/p/itm6c9e6e7c7f800" target="_blank" class="card" data-aos="fade-up">
+                <h3><i class="fas fa-book-open"></i> Published Author</h3>
+                <p>Authored "Collection of a Novice Wordsmith", an anthology of poems and stories published on Amazon and Flipkart.</p>
+                <div class="link-btn">View on Flipkart <i class="fas fa-external-link-alt"></i></div>
+            </a>
+            <a href="https://fiftywordstories.com/2025/03/03/tanishq-kalra-lost-in-the-spotlight/" target="_blank" class="card" data-aos="fade-up" data-aos-delay="100">
+                <h3><i class="fas fa-pen-nib"></i> Magazine Contributions</h3>
+                <p>Featured in Everscribe Magazine, 50-Word Story, and various literary anthologies.</p>
+                <div class="link-btn">Read "Lost in the Spotlight" <i class="fas fa-external-link-alt"></i></div>
+            </a>
+            <div class="card full-width" data-aos="fade-up">
+                <h3>Content & Newsletter</h3>
+                <p>Published 20+ articles on literature, creativity, and entrepreneurship. Ran a weekly finance newsletter delivering engaging content to readers.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="achievements">
+        <h2 data-aos="fade-right">Honors & Leadership</h2>
+        <div class="grid">
+            <div class="card" data-aos="fade-up">
+                <h3>NEC IIT Bombay</h3>
+                <p>Ranked in the <strong>Top 14</strong> out of 500+ teams in the National Entrepreneurship Challenge for data-driven solutions.</p>
+            </div>
+            <div class="card" data-aos="fade-up" data-aos-delay="100">
+                <h3>Wednesday Time Magazine</h3>
+                <p>Achieved <strong>2nd in India</strong> in a nationwide quiz competition.</p>
+            </div>
+            <div class="card full-width" data-aos="fade-up">
+                <h3>Leadership Roles</h3>
+                <ul style="color: var(--text-dim); padding-left: 20px; font-size: 0.95rem;">
+                    <li><strong>Vice President (Comedy Club):</strong> Managed 50+ members and increased participation by 40% using engagement data.</li>
+                    <li><strong>Marketing Co-Lead:</strong> Boosted event registrations by 35% through analytics-driven campaigns.</li>
+                    <li><strong>Head Boy (Shamrock School):</strong> Led 2000+ students and introduced school-wide leadership initiatives.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</div>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+<script>
+    AOS.init({ duration: 1000, once: true });
+
+    var typed = new Typed('.typewriter', {
+        strings: [
+            'Data Analyst.', 
+            'Full-Stack Developer.', 
+            'Published Author.', 
+            'Marketing Strategist.'
+        ],
+        typeSpeed: 60,
+        backSpeed: 40,
+        loop: true
+    });
+</script>
+
+</body>
+</html>
